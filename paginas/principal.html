@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal | Projeto Inicial - Web Standards</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/menu.css">
+    <link rel="stylesheet" type="text/css" href="../assets/fontawesome/css/all.min.css">
+</head>
+<body>
+    <div id="cssmenu">
+        <ul>
+            <li>
+                <span>Home</span>
+            </li>
+            <li class="full-width">
+                <span>Aplicativos <i class="arrow"></i></span>
+                <div class="dropdown right0">
+                    <div class="clm">
+                        <a href="#">Calculadora</a>
+                        <a href="#">Busca CEP (WSDL)</a>
+                        <a href="#">Busca CEP (JSON)</a>
+                    </div>                    
+                </div>
+            </li>
+            <li class="full-width">
+                <span>Equipe <i class="arrow"></i></span>
+                <div class="dropdown right0">
+                    <div class="clm">
+                        <a href="#">Jardel Gomes</a>
+                        <a href="#">Jamshaid Jamali</a>
+                        <a href="#">Jose Lucas</a>
+                        <a href="#">Rafael Grisi</a>
+                    </div>                    
+                </div>
+            </li>
+        </ul>
+
+        <div>
+            <i class="fas fa-walking"></i>
+        </div>
+    </div>
+
+    <nav id="backgroundImage">
+        <div id="conteudo">
+            <div class="imageUsuario">
+                <i class="fas fa-user"></i>
+            </div>
+            <p>Identifique-se para entrar</p>
+            <div class="grupoLogin">
+                <input class="inputLogin" type="text" name="login" placeholder="seu_email@exemplo.com">
+            </div>
+            <div class="grupoSenha">
+                <input class="inputSenha" type="password" name="senha" placeholder="digite sua senha">
+            </div>
+            <div class="grupoBotoes">
+                <input class="botaoPadrao botaoLimpar" type="button" value="Limpar" onclick="limpar()">
+                <input class="botaoPadrao botaoEntrar" type="button" value="Entrar" onclick="login()">            
+            </div>
+        </div>
+    </nav>
+
+    <footer>
+
+    </footer>
+
+    <modal>
+        <div class="modalTitulo">
+            <p>Titulo da Mensagem</p>
+        </div>
+
+        <div class="modalMensagem">
+            <p>Corpo da Mensagem</p>
+        </div>
+
+        <div class="modalRodape">
+            <a href="#" class="botaoPadrao botaoFechar" >Fechar</a>
+        </div>
+    </modal>
+</body>
+<script type="text/javascript" src="../js/script.js"></script>
+<script type="text/javascript" src="../assets/fontawesome/js/all.min.js"></script>
+</html>

@@ -1,0 +1,276 @@
+@font-face {
+    font-family: "Poppins-Regular";
+    src:
+      local("Poppins-Regular"),
+      url("../assets/fonts/poppins-regular/Poppins-Regular.ttf") format("truetype"),
+      url("../assets/fonts/poppins-regular/Poppins-Regular.woff") format("woff"),
+      url("../assets/fonts/poppins-regular/Poppins-Regular.woff2") format("woff2")
+  }
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src:
+      local("Poppins-Regular"),
+      url("../assets/fonts/roboto-regular/Roboto-Regular.ttf") format("truetype"),
+      url("../assets/fonts/roboto-regular/Roboto-Regular.woff") format("woff"),
+      url("../assets/fonts/roboto-regular/Roboto-Regular.woff2") format("woff2")
+  }
+
+body{
+    margin: 0 0; 
+    font-family: "Roboto-Regular";
+}
+
+#backgroundImage{
+    display: grid;
+    place-items: center;    
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+#backgroundImage::after{
+    content: '';
+    background-color: ghostwhite;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: .8;
+    z-index: -1;
+}
+
+#conteudo{
+    background: rgb(119,121,245);
+    background: linear-gradient(180deg, rgba(119,121,245,1) 0%, rgba(168,56,229,1) 100%);
+    width: 54vh;
+    height: 60vh;
+    border-radius: 6px;
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.75);
+}
+
+#conteudo p{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.imageUsuario{
+    font-size: 60px;
+    color: #333333;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 8vh auto auto auto;
+}
+
+.grupoBotoes{
+    margin: 6vh 4vh 0 4vh;
+}
+
+
+/* INPUTS */
+
+input[type=text], input[type=password]{
+    font-family: Poppins-Regular;
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.2;
+    display: block;
+    width: 75%;
+    height: 45px;
+    background: transparent;
+    padding: 0 5px 0 38px;
+    border: 1px solid #fff;
+    margin: 2vh auto;
+    border-radius: 6px;
+    text-align: center;
+}
+
+input[type=text]:hover, input[type=password]:hover{
+    background-color: ghostwhite;
+}
+
+input[type=text]:focus, input[type=password]:focus{
+    border: 1px solid #fff;
+    border-radius: 6px;
+}
+
+input[type=text]::placeholder, input[type=password]::placeholder {
+    color: #fff;
+    opacity: 0.8;    
+}
+
+input[type=text]:hover::placeholder, input[type=password]:hover::placeholder {
+    color: #000000;
+}
+
+/* BOTOES */
+
+.botaoPadrao{
+    font-family: "Roboto-Regular";
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    border-color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    width: 22.7vh;
+}
+
+.botaoPadrao:hover{
+    background-color: ghostwhite;;
+    border-color: #B3B3B3;
+    opacity: 0.8;
+}
+
+.botaoEntrar{
+    background-color: #4351E8;
+    border-color: #4351E8;
+    color: #FFFFFF;
+}
+
+.botaoEntrar:hover{
+    background-color: #212873;
+    border-color: #212873;
+}
+
+.botaoLimpar{
+    background-color: #C291E8;
+    border-color: #C291E8;
+    color: #FFFFFF;
+}
+
+.botaoLimpar:hover{
+    background-color: #422A91;
+    border-color: #422A91;
+}
+
+.botaoFechar{
+    background-color: #39C078;
+    border-color: #39C078;
+    color: #FFFFFF;
+}
+
+.botaoFechar:hover{
+    background-color: #1F6841;
+    border-color: #1F6841;
+}
+
+/* HEADER - MENU */
+header {
+    position: relative;
+    width: 100%;
+}
+
+.menu ul li {
+    display: inline-block;
+}
+.menu ul li a {
+    display: block;
+    color: #FFFFFF;
+    padding: 30px 10px;
+}
+
+/**/
+.menu{
+    background-color: #666666;
+    text-align: center;
+    list-style:none;
+    border:1px solid #c0c0c0;
+    float:left;
+}
+
+.menu li{
+    position:relative;
+    float:left;
+    border-right:1px solid #c0c0c0;
+}
+
+.menu li a{
+    color:#333; 
+    text-decoration:none; 
+    padding:5px 10px; 
+    display:block;
+}
+
+.menu li a:hover{
+    background:#333;
+    color:#fff;
+    -moz-box-shadow:0 3px 10px 0 #CCC;
+    -webkit-box-shadow:0 3px 10px 0 #ccc;
+    text-shadow:0px 0px 5px #fff;
+}
+
+.menu li  ul{
+    position:absolute;
+    top:25px;
+    left:0;
+    background-color:#fff;
+    display:none;
+}
+
+.menu li:hover ul, .menu li.over ul{display:block;}
+
+.menu li ul li{
+    border:1px solid #c0c0c0;
+    display:block;
+    width:150px;
+}
+
+/* CAIXA MODAL */
+modal{
+    display: none;
+    font-family: "Roboto-Regular";
+    color: #FFFFFF;
+    position: absolute;
+    background: rgb(119, 121, 245);
+    background: linear-gradient(180deg, rgba(119, 121, 245, 1) 0%, rgba(168, 56, 229, 1) 100%);
+    width: 30%;
+    height: 25%;
+    border-radius: 6px;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.75);
+    z-index: 1;
+    top: 38%;
+    left: 35%;
+}
+
+.modalTitulo{
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid #fff;
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+}
+
+.modalMensagem{
+    text-align: center;
+    width: 95%;
+    margin-top: 6vh;
+}
+
+modal a{
+    margin: 6vh auto auto auto;
+    display: block !important;
+}
