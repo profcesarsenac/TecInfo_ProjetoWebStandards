@@ -238,6 +238,11 @@ header {
     width:150px;
 }
 
+nav img{
+    width: 80vh;
+    opacity: 0.6;
+}
+
 /* CAIXA MODAL */
 modal{
     display: none;
