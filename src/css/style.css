@@ -59,6 +59,20 @@ body{
     text-align: center;
 }
 
+.conteudoCep{
+    margin-top: -22vh;
+   min-height: 75vh;
+}
+
+.conteudoCep label {
+    text-transform: none;
+    font-size: small;
+    text-align: left !important;
+    padding-left: 5vh;
+    display: block;
+    margin-bottom: -1.5vh;
+}
+
 .imageUsuario{
     font-size: 60px;
     color: #333333;
@@ -177,70 +191,45 @@ input[type=text]:hover::placeholder, input[type=password]:hover::placeholder {
     border-color: #1F6841;
 }
 
+.botaoBuscarCEP{
+    height: 22px !important;
+    width: 11.3vh;
+    line-height: 0.5;
+    font-size: smaller;
+}
+
 /* HEADER - MENU */
 header {
     position: relative;
     width: 100%;
 }
 
-.menu ul li {
-    display: inline-block;
-}
-.menu ul li a {
-    display: block;
-    color: #FFFFFF;
-    padding: 30px 10px;
-}
-
-/**/
-.menu{
-    background-color: #666666;
-    text-align: center;
-    list-style:none;
-    border:1px solid #c0c0c0;
-    float:left;
-}
-
-.menu li{
-    position:relative;
-    float:left;
-    border-right:1px solid #c0c0c0;
-}
-
-.menu li a{
-    color:#333; 
-    text-decoration:none; 
-    padding:5px 10px; 
-    display:block;
-}
-
-.menu li a:hover{
-    background:#333;
-    color:#fff;
-    -moz-box-shadow:0 3px 10px 0 #CCC;
-    -webkit-box-shadow:0 3px 10px 0 #ccc;
-    text-shadow:0px 0px 5px #fff;
-}
-
-.menu li  ul{
-    position:absolute;
-    top:25px;
-    left:0;
-    background-color:#fff;
-    display:none;
-}
-
-.menu li:hover ul, .menu li.over ul{display:block;}
-
-.menu li ul li{
-    border:1px solid #c0c0c0;
-    display:block;
-    width:150px;
-}
-
 nav img{
     width: 80vh;
     opacity: 0.6;
+}
+
+.viaCepLogo img{
+    padding: 1vh;
+}
+
+.viaCepLogo .imgLogoCorreios{
+    width: 50vh;
+    margin: 0 auto;
+    display: block;
+}
+
+.inputsCEPs{
+    height: 22px !important;
+    text-align: left !important;
+    padding-left: 15px !important;
+}
+
+.inputCEP{
+    width: 16vh !important;
+    margin-left: 5vh !important;
+    margin-right: 1vh !important;
+    display: inline !important;
 }
 
 /* CAIXA MODAL */

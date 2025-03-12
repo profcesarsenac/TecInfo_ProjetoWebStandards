@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Principal | Projeto Inicial - Web Standards</title>
+    <title>Busca CEP | Projeto Inicial - Web Standards</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/menu.css">
     <link rel="stylesheet" type="text/css" href="../css/menu.css">
     <link rel="stylesheet" type="text/css" href="../assets/fontawesome/css/all.min.css">
 </head>
@@ -43,13 +44,40 @@
         </div>
     </div>
 
-    <nav id="backgroundImage">
-        <img  src="../images/senac-logo.webp" alt="senac-logo">
-    </nav>
+    <div id="backgroundImage">
+        <div id="conteudo" class="conteudoCep">
+            <div class="viaCepLogo">
+                <img src="../images/consultar_cep_viacep.png" alt="logo-correios-vicep">
+            </div>
+            <div class="grupoLogin">
+                <label for="cep">Digite o CEP a ser procurado</label>
+                <input class="inputsCEPs inputCEP" type="text" name="cep" placeholder="Ex: 12.345-678">
+                <input class="botaoPadrao botaoEntrar botaoBuscarCEP" type="button" name="btnBuscaCep" value="Buscar" onclick="login()">            
+                <input class="botaoPadrao botaoLimpar botaoBuscarCEP" type="button" name="btnBuscaCep" value="Limpar" onclick="login()">            
 
-    <footer>
+            </div>
+            <div class="grupoSenha">
 
-    </footer>
+                <label for="endereco">Logradouro/Endereço</label>
+                <input class="inputsCEPs inputLogradouro" type="text" name="endereco" placeholder="Ex: Avenida um dois três">
+
+                <label for="complemento">Complemento</label>
+                <input class="inputsCEPs inputComplemento" type="text" name="complemento" placeholder="Ex: Apto, Viela, etc.">
+
+                <label for="numero">Número</label>
+                <input class="inputsCEPs inputNumero" type="text" name="numero" placeholder="Ex: 12, 123, 1234, etc.">
+
+                <label for="bairro">Bairro</label>
+                <input class="inputsCEPs inputBairro" type="text" name="bairro" placeholder="Ex: Vila Feliz, Jardim Bonito, etc.">
+
+                <label for="cidade">Localidade/Cidade</label>
+                <input class="inputsCEPs inputLocalidade" type="text" name="cidade" placeholder="Ex: São Paulo, Rio de Janeiro, etc.">
+
+                <label for="uf">UF</label>
+                <input class="inputsCEPs inputUF" type="text" name="uf" placeholder="Ex: SP, RJ, BA, etc.">
+            </div>
+        </div>
+    </div>
 
     <modal>
         <div class="modalTitulo">
