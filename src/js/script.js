@@ -12,6 +12,10 @@ function login(){
 
 function limparLogin()
 {
-    let login = document.getElementsByName("login").value = "";
-    let senha = document.getElementsByName("senha").value = "";
+    let login = document.getElementsByName("login");
+    let senha = document.getElementsByName("senha");
+
+    senha.value = "";
+    login.value = "";
+    login.focus();
 }

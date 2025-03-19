@@ -73,6 +73,11 @@ body{
     margin-bottom: -1.5vh;
 }
 
+.conteudoCalculadora{
+    height: 56vh !important;
+    width: 52vh !important;
+}
+
 .imageUsuario{
     font-size: 60px;
     color: #333333;
@@ -129,6 +134,31 @@ input[type=text]::placeholder, input[type=password]::placeholder {
 
 input[type=text]:hover::placeholder, input[type=password]:hover::placeholder {
     color: #000000;
+}
+
+.grupoBotoesCalculadora{
+    padding: 0 3vh;
+}
+
+.inputVisorCalculadora{
+    width: 74% !important;
+    margin-left: 7.5% !important;
+}
+
+.botaoCalculadora{
+    color: #FFFFFF;
+    font-size: xx-large;
+    width: 9vh;
+    height: 9vh;
+    margin: 1vh;
+    background-color: #76C4F5;
+    border: 1px solid #76C4F5;
+    box-shadow: 1px 1px #000;
+}
+
+.botaoCalculadora:hover{
+    background-color: #5995BA;
+    border: 1px solid #5995BA;
 }
 
 /* BOTOES */
