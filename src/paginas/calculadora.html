@@ -44,6 +44,7 @@
     </div>
 
     <div id="backgroundImage">
+        <input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" />
         <div id="conteudo">
             <div class="imageUsuario">
                 <i class="fas fa-user"></i>
