@@ -66,6 +66,13 @@
     position:relative;
     transition:all 0.3s;
 }
+
+#cssmenu li a {
+    color: #FFFFFF; 
+    animation:none;
+    text-decoration: none;
+}
+
 #cssmenu li:hover > span, #cssmenu li:hover > a
 {  
     color:#333333;
@@ -93,7 +100,7 @@
     display: block;  
 }
 
-#cssmenu .dropdown li > span, #cssmenu .dropdown li > a, #cssmenu .clm a, #cssmenu .clm h3 
+#cssmenu .dropdown li > span, #cssmenu .dropdown li > a, #cssmenu .dropdownItens a
 {
     font-size:14px;
     font-weight:400;
@@ -104,40 +111,18 @@
     color:inherit;
     text-decoration:none;
 }
-#cssmenu .clm h3 {
-    font-size:20px;
-    font-weight:700;
-}
-#cssmenu .sub-item {
-    background-color:#F3F3F3;
-    position:relative;       
-    transition:all 0.3s;
-}
 
 #cssmenu .dropdown li:hover > span, #cssmenu .dropdown li:hover > a
 {
-
     color:#333333;
     background-color:#DDDDDD;
 }
 
-#cssmenu .clm a:hover
+#cssmenu .dropdownItens a:hover
 {
     color:#333333;
     transition:color 0.2s;
 }
-
-#cssmenu .dropdown.right0 {left:auto;right:0;} 
-#cssmenu .dropdown li > .dropdown.right0 {left:auto;right:100%;} 
-       
-#cssmenu li.full-width{
-    position:static;
-}
-#cssmenu li.full-width .dropdown{
-    width:100%;
-    left:0;
-    box-sizing:border-box;
-}  
 
 #cssmenu li:hover > .dropdown
 {
@@ -162,7 +147,7 @@
 }
 
 /* each column */
-#cssmenu .clm
+#cssmenu .dropdownItens
 {
     text-align:left;
     margin:20px;
@@ -173,7 +158,7 @@
     *display:inline;*zoom:1;
 }
 
-#cssmenu .clm a:hover
+#cssmenu .dropdownItens a:hover
 {
     color:#333333;
     text-decoration:underline;
@@ -182,7 +167,12 @@
 /*-----------Arrows----------------*/
 #cssmenu .arrow {
     color:inherit;
-    border-style:solid; border-width:2px 2px 0 0; padding:4px; transform:rotate(135deg);margin-top:-8.5px;margin-left:4px;
+    border-style:solid; 
+    border-width:2px 2px 0 0; 
+    padding:4px; 
+    transform:rotate(135deg);
+    margin-top:-8.5px;
+    margin-left:4px;
     position:relative;
     display: inline-block;
     width: 0;
@@ -193,25 +183,9 @@
         
 #cssmenu .dropdown .arrow {
     transform:rotate(45deg);
-    top:50%;margin-top:-6px;
-    position:absolute;left:auto;right:20px;
+    top:50%;
+    margin-top:-6px;
+    position:absolute;
+    left:auto;
+    right:20px;
 } 
-
-
-
-@keyframes topItemAnimation {
-  from {opacity: 0; transform:translate3d(0, -60px, 0);}
-  to {opacity: 1; transform:translate3d(0, 0, 0);}
-}
-#cssmenu li a {
-    color: #FFFFFF; 
-    animation:none;
-    text-decoration: none;
-}
-#cssmenu.active li a { animation: topItemAnimation 0.5s cubic-bezier(.16,.84,.44,1) 0.08333333333333333s backwards;}
-#cssmenu.active li:nth-of-type(1) a { animation: topItemAnimation 0.5s cubic-bezier(.16,.84,.44,1) 0.5s backwards;}
-#cssmenu.active li:nth-of-type(2) a { animation: topItemAnimation 0.5s cubic-bezier(.16,.84,.44,1) 0.4166666666666667s backwards;}
-#cssmenu.active li:nth-of-type(3) a { animation: topItemAnimation 0.5s cubic-bezier(.16,.84,.44,1) 0.3333333333333333s backwards;}
-#cssmenu.active li:nth-of-type(4) a { animation: topItemAnimation 0.5s cubic-bezier(.16,.84,.44,1) 0.25s backwards;}
-#cssmenu.active li:nth-of-type(5) a { animation: topItemAnimation 0.5s cubic-bezier(.16,.84,.44,1) 0.16666666666666666s backwards;}@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { #cssmenu.active li a{animation:none!important;}}
-

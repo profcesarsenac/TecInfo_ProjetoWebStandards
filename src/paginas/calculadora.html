@@ -44,12 +44,8 @@
     </div>
 
     <div id="backgroundImage">
-        <div id="conteudo" class="conteudoCalculadora">
-
-            <div class="grupoVisorCalculadora">
-                <input class="inputVisorCalculadora" type="text" name="visor">
-            </div>
-
+        <input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" />
+        <div id="conteudo">
             <div class="grupoBotoesCalculadora">
                 <input class="botaoCalculadora" type="button" value="7">
                 <input class="botaoCalculadora" type="button" value="8">
