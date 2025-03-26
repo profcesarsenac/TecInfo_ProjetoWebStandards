@@ -19,6 +19,7 @@
 body{
     margin: 0 0; 
     font-family: "Roboto-Regular";
+    overflow-y: hidden;
 }
 
 #backgroundImage{
@@ -297,4 +298,28 @@ modal{
 modal a{
     margin: 6vh auto auto auto;
     display: block !important;
+}
+
+
+#loading{
+    position: absolute;
+    display: none;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    height: 100vh;
+    text-align: center;
+    background-color: #333333;
+    opacity: 0.9;
+}
+
+#loading img{
+    max-width: 8vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+}
+
+#loading p{
+    color: #FFF;
 }

@@ -52,7 +52,7 @@
             <div class="grupoLogin">
                 <label for="cep">Digite o CEP a ser procurado</label>
                 <input class="inputsCEPs inputCEP" type="text" name="cep" placeholder="Ex: 12.345-678">
-                <input class="botaoPadrao botaoEntrar botaoBuscarCEP" type="button" name="btnBuscaCep" value="Buscar" onclick="login()">            
+                <input class="botaoPadrao botaoEntrar botaoBuscarCEP" type="button" name="btnBuscaCep" value="Buscar" onclick="buscaCEP('JSON')">            
                 <input class="botaoPadrao botaoLimpar botaoBuscarCEP" type="button" name="btnBuscaCep" value="Limpar" onclick="login()">            
 
             </div>
@@ -92,7 +92,14 @@
             <a href="#" class="botaoPadrao botaoFechar" >Fechar</a>
         </div>
     </modal>
+
+    <div id="loading">
+        <img  src="../images/loading.webp" alt="loading">
+        <p>carregando...</p>
+    </div>
+    
 </body>
 <script type="text/javascript" src="../js/script.js"></script>
+<script type="text/javascript" src="../js/scriptsCEP.js"></script>
 <script type="text/javascript" src="../assets/fontawesome/js/all.min.js"></script>
 </html>
