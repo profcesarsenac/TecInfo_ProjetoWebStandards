@@ -133,17 +133,19 @@
 
 #cssmenu .dropdown li > .dropdown
 {
-    left:100%; right:auto;
+    left:100%; 
+    right:auto;
     top:0;
 }
 
 #cssmenu ul.dropdown
 {
     min-width:240px; /* Sub level menu min width */
+    text-align:center;
 }
 
 #cssmenu div.dropdown  {
-    text-align:center;
+    
 }
 
 /* each column */
